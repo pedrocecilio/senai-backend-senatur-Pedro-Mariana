@@ -10,6 +10,6 @@ namespace Senai.Senatur.WebApi.Domains
         public string Senha { get; set; }
         public int? IdTipoUsuario { get; set; }
 
-        public TiposUsuario IdTipoUsuarioNavigation { get; set; }
+        public TipoUsuario IdTipoUsuarioNavigation { get; set; }
     }
 }

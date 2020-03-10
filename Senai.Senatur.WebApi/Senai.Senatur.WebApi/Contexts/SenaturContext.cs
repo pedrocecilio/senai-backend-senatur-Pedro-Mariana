@@ -16,7 +16,7 @@ namespace Senai.Senatur.WebApi.Domains
         }
 
         public virtual DbSet<Pacotes> Pacotes { get; set; }
-        public virtual DbSet<TiposUsuario> TiposUsuario { get; set; }
+        public virtual DbSet<TipoUsuario> TiposUsuario { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -57,7 +57,7 @@ namespace Senai.Senatur.WebApi.Domains
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TiposUsuario>(entity =>
+            modelBuilder.Entity<TipoUsuario>(entity =>
             {
                 entity.HasKey(e => e.IdTipoUsuario);
 

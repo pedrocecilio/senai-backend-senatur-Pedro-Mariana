@@ -26,3 +26,17 @@ C:\Users\44781915817\Desktop\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.W
 C:\Users\44781915817\Desktop\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\44781915817\Desktop\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
 C:\Users\44781915817\Desktop\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.deps.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.runtimeconfig.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.runtimeconfig.dev.json
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\bin\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.csprojAssemblyReference.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorAssemblyInfo.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorAssemblyInfo.cs
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.AssemblyInfoInputs.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.AssemblyInfo.cs
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.dll
+C:\Users\cecil\OneDrive\Área de Trabalho\senai-backend-senatur-Pedro-Mariana\Senai.Senatur.WebApi\Senai.Senatur.WebApi\obj\Debug\netcoreapp2.1\Senai.Senatur.WebApi.pdb
