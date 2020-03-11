@@ -62,50 +62,5 @@ namespace Senai.Senatur.WebApi.Domains.Controllers
             return Ok(_usuarioRepository.BuscarPorId(id));
         }
 
-        /// <summary>
-        /// Cadastra um novo usuário
-        /// </summary>
-        /// <param name="novoUsuario">Objeto com as informações</param>
-        /// <returns>Um status code 201 - Created</returns>
-        [HttpPost]
-        public IActionResult Post(Usuarios novoUsuario)
-        {
-            // Faz a chamada para o método
-            _usuarioRepository.Cadastrar(novoUsuario);
-
-            // Retorna um status code
-            return StatusCode(201);
-        }
-
-        /// <summary>
-        /// Atualiza um usuário existente
-        /// </summary>
-        /// <param name="id">ID do usuário que será atualizado</param>
-        /// <param name="usuarioAtualizado">Objeto com as novas informações</param>
-        /// <returns>Um status code 204 - No Content</returns>
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, Usuarios usuarioAtualizado)
-        {
-            // Faz a chamada para o método
-            _usuarioRepository.Atualizar(id, usuarioAtualizado);
-
-            // Retorna um status code
-            return StatusCode(204);
-        }
-
-        /// <summary>
-        /// Deleta um usuário
-        /// </summary>
-        /// <param name="id">ID do usuário que será deletado</param>
-        /// <returns>Um status code 204 - No Content</returns>
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            // Faz a chamada para o método
-            _usuarioRepository.Deletar(id);
-
-            // Retorna um status code
-            return StatusCode(204);
-        }
     }
 }

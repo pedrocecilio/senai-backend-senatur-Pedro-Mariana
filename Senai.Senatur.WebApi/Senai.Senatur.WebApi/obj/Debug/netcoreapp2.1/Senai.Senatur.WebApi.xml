@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Senai.Senatur.WebApi.Domains.Controllers.UsuariosController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos usuários
+            </summary>
+        </member>
+        <member name="F:Senai.Senatur.WebApi.Domains.Controllers.UsuariosController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Domains.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Domains.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Uma lista de usuários e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Domains.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Domains.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsável pelo UsuarioRepository
+            </summary>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Domains.Repositories.UsuarioRepository">
+            <summary>
+            Repositório responsável pelo repositório dos usuários
+            </summary>
+        </member>
+        <member name="F:Senai.Senatur.WebApi.Domains.Repositories.UsuarioRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Domains.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Um usuário buscado</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Domains.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="P:Senai.Senatur.WebApi.Controllers.LoginController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.Post(Senai.Senatur.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Listar">
+            <summary>
+            tras todos os pacotes em uma lista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.BuscarporId(System.Int32)">
+            <summary>
+            listar o pacote pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Cadastrar(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            cadastra um novo pacote
+            </summary>
+            <param name="novoPacote"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Alterar(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            altera dados do pacote
+            </summary>
+            <param name="id"></param>
+            <param name="pacoteAlterado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Deletar(System.Int32)">
+            <summary>
+            deletar o pacote especifico
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Controllers.TiposUsuarioController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos tipos de usuário
+            </summary>
+        </member>
+        <member name="F:Senai.Senatur.WebApi.Controllers.TiposUsuarioController._tipoUsuarioRepository">
+            <summary>
+            Cria um objeto _tipoUsuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Uma lista de tipos de usuário e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.TiposUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Um tipo de usuário buscado e um status code 200 - Ok</returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Interfaces.ITipoUsuarioRepository">
+            <summary>
+            Interface responsável pelo TipoUsuarioRepository
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Interfaces.ITipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuários
+            </summary>
+            <returns>Uma lista de tipos de usuários</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Interfaces.ITipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário buscado</param>
+            <returns>Um tipo de usuário buscado</returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Repositories.TipoUsuarioRepository">
+            <summary>
+            Repositório responsável pelo repositório dos tipos de usuário
+            </summary>
+        </member>
+        <member name="F:Senai.Senatur.WebApi.Repositories.TipoUsuarioRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Repositories.TipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Uma lista de tipos de usuário</returns>
+        </member>
+    </members>
+</doc>

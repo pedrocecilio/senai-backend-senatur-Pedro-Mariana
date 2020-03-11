@@ -1,4 +1,5 @@
-﻿using Senai.Senatur.WebApi.Domains;
+﻿using Microsoft.EntityFrameworkCore;
+using Senai.Senatur.WebApi.Domains;
 using Senai.Senatur.WebApi.Domains.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -17,31 +18,9 @@ namespace Senai.Senatur.WebApi.Domains.Repositories
         /// </summary>
         SenaturContext ctx = new SenaturContext();
 
-        /// <summary>
-        /// Atualiza um usuário existente
-        /// </summary>
-        /// <param name="id">ID do usuário que será alterado</param>
-        /// <param name="usuarioAtualizado">Objeto com as novas informações</param>
-        public void Atualizar(int id, Usuarios usuarioAtualizado)
-        {
-            // Busca um usuário através do id
-            Usuarios usuarioBuscado = ctx.Usuarios.Find(id);
-
-            // Atribui os novos valores ao campos existentes
-            usuarioBuscado.Email = usuarioAtualizado.Email;
-            usuarioBuscado.Senha = usuarioAtualizado.Senha;
-            usuarioBuscado.IdTipoUsuario = usuarioAtualizado.IdTipoUsuario;
-
-            // Atualiza o usuário que foi buscado
-            ctx.Usuarios.Update(usuarioBuscado);
-
-            // Salva as informações para serem gravadas no banco
-            ctx.SaveChanges();
-        }
-
         public Usuarios BuscarPorEmailSenha(string email, string senha)
         {
-            return ctx.Usuarios.Find(email,senha);
+            return ctx.Usuarios.FirstOrDefault(e=>e.Email ==email && e.Senha == senha);
         }
 
         /// <summary>
@@ -52,36 +31,7 @@ namespace Senai.Senatur.WebApi.Domains.Repositories
         public Usuarios BuscarPorId(int id)
         {
             // Retorna o primeiro usuário para o ID informado
-            return ctx.Usuarios.FirstOrDefault(u => u.IdUsuario == id);
-        }
-
-        /// <summary>
-        /// Cadastra um novo usuário
-        /// </summary>
-        /// <param name="novoUsuario"></param>
-        public void Cadastrar(Usuarios novoUsuario)
-        {
-            // Adiciona um novo usuário
-            ctx.Usuarios.Add(novoUsuario);
-
-            // Salva as informações para serem gravas no banco
-            ctx.SaveChanges();
-        }
-
-        /// <summary>
-        /// Deleta um usuário
-        /// </summary>
-        /// <param name="id">ID do usuário que será deletado</param>
-        public void Deletar(int id)
-        {
-            // Busca um usuário através do id
-            Usuarios usuarioBuscado = ctx.Usuarios.Find(id);
-
-            // Remove o usuário que foi buscado
-            ctx.Usuarios.Remove(usuarioBuscado);
-
-            // Salva as alterações
-            ctx.SaveChanges();
+            return ctx.Usuarios.Include(u => u.IdTipoUsuarioNavigation).FirstOrDefault(u => u.IdUsuario == id);
         }
 
         /// <summary>
@@ -91,7 +41,7 @@ namespace Senai.Senatur.WebApi.Domains.Repositories
         public List<Usuarios> Listar()
         {
             // Retorna uma lista com todas as informações dos usuários
-            return ctx.Usuarios.ToList();
+            return ctx.Usuarios.Include(t=>t.IdTipoUsuarioNavigation).ToList();
         }
     }
 }

@@ -17,10 +17,5 @@ namespace Senai.Senatur.WebApi.Domains.Interfaces
 
         Usuarios BuscarPorId(int id);
 
-        void Cadastrar(Usuarios novoUsuario);
-
-        void Atualizar(int id, Usuarios usuarioAtualizado);
-
-        void Deletar(int id);
     }
 }
